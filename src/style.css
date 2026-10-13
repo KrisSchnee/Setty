@@ -1,0 +1,113 @@
+:root {
+  --bg: #0f1113;
+  --panel: #1b1e22;
+  --line: #2c3138;
+  --text: #d6d3cc;
+  --muted: #8b8680;
+  --accent: #e6b84d;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --sans: 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  max-height: 100dvh;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.4 var(--sans);
+}
+
+#app {
+  height: 100%;
+  max-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  overflow: hidden;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px;
+  background: var(--panel);
+  border-color: var(--line);
+  user-select: none;
+}
+
+header {
+  border-bottom: 1px solid var(--line);
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+a.credit {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+a.credit:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+label.snap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+#status {
+  margin-left: auto;
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: 12px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: block;
+  outline: none;
+  cursor: crosshair;
+}
+
+#map.panning {
+  cursor: grabbing;
+}
+
+kbd {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 1px 5px;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  color: var(--text);
+}

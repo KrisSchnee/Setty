@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setty</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Setty</h1>
+        <a class="credit" href="https://x.ai" target="_blank" rel="noopener">Made with Grok (xAI)</a>
+        <label class="snap">
+          <input id="snap" type="checkbox" checked />
+          Snap to grid
+        </label>
+        <div id="status"></div>
+      </header>
+      <canvas id="map"></canvas>
+      <footer>
+        <span><kbd>Click</kbd> place point</span>
+        <span><kbd>Enter</kbd> or double-click close</span>
+        <span><kbd>Esc</kbd> cancel</span>
+        <span><kbd>G</kbd> snap</span>
+        <span><kbd>Ctrl</kbd>+<kbd>Z</kbd> undo</span>
+        <span>Wheel zoom · Space-drag or middle-drag pan</span>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
