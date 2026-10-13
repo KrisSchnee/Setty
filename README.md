@@ -10,36 +10,7 @@ Stack: TypeScript, Vite, Canvas 2D (map editor), Three.js (3D view, next).
 
 ## AI credit
 
-This project was written with [Grok](https://x.ai) (xAI). If you want to avoid AI-made software, skip Setty.
-
-## Run locally
-
-Node is only for *you* while editing. People using the app just open a web page.
-
-```bash
-npm install
-npm run dev
-```
-
-Open http://localhost:5173
-
-Stop the server with **Ctrl+C** in that same terminal. That ends the `localhost` process; it is not a background service.
-
-If the terminal is gone and the page still loads, something is still bound to port 5173. Stop it with:
-
-```bash
-fuser -k 5173/tcp
-```
-
-## Share a build
-
-`npm run build` writes a static site into `dist/` (HTML, CSS, JS). No Node is required to view it. Host that folder anywhere that serves files:
-
-- **GitHub Pages** — free URL such as `https://<you>.github.io/Setty/`. Visitors never need a GitHub account. A workflow in `.github/workflows/pages.yml` builds and publishes on each push to `main`.
-- **Netlify Drop** — [app.netlify.com/drop](https://app.netlify.com/drop): drag the `dist` folder onto the page and get a link in a minute.
-- **itch.io** — a friendly public page for tools; upload the contents of `dist` as an HTML5 project.
-
-GitHub is a good home for the source. The thing you send to other people is the Pages (or Netlify/itch) URL, not the repository.
+This project was written with [Grok](https://x.ai) (xAI).
 
 ## Coordinates
 
